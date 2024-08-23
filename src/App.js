@@ -1,6 +1,14 @@
+import notify from './utils/notify';
 import './App.css';
 
 function App() {
+
+  const handelSuccess = () => {
+
+    notify.success("Success")
+
+  }
+
   return (
     <div className="App">
 
@@ -12,7 +20,7 @@ function App() {
 
         <div className='d-flex flex-row align-items-center justify-content-center' style={{ gap: "20px" }}>
 
-          <button className='btn btn-success'>Add Toast</button>
+          <button className='btn btn-success' onClick={handelSuccess}>Add Toast</button>
           <button className='btn btn-warning'>Add Toast</button>
           <button className='btn btn-secondary'>Add Toast</button>
           <button className='btn btn-danger'>Add Toast</button>
