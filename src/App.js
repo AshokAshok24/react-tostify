@@ -5,9 +5,25 @@ function App() {
 
   const handelSuccess = () => {
 
-    notify.success("Success")
+    notify.success("Hii..you are successfully Creted Toast")
 
   }
+  const handelWarning = () => {
+
+    notify.warning("Warning Message")
+
+  }
+  const handelInfo = () => {
+
+    notify.info("This about React-tostify Notification Popups")
+
+  }
+  const handelError = () => {
+
+    notify.error("Error Message")
+
+  }
+
 
   return (
     <div className="App">
@@ -20,10 +36,10 @@ function App() {
 
         <div className='d-flex flex-row align-items-center justify-content-center' style={{ gap: "20px" }}>
 
-          <button className='btn btn-success' onClick={handelSuccess}>Add Toast</button>
-          <button className='btn btn-warning'>Add Toast</button>
-          <button className='btn btn-secondary'>Add Toast</button>
-          <button className='btn btn-danger'>Add Toast</button>
+          <button className='btn btn-success' onClick={handelSuccess}>Success Toast</button>
+          <button className='btn btn-warning' onClick={handelWarning}>Warning Toast</button>
+          <button className='btn btn-secondary' onClick={handelInfo}>Info Toast</button>
+          <button className='btn btn-danger' onClick={handelError}>Error Toast</button>
 
         </div>
 
